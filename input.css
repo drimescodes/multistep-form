@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+    .side_list {
+       @apply flex gap-8   mt-10 md:items-center
+    }
+
+    .side_list_numcontainer {
+        @apply w-10 h-10 rounded-full border border-solid border-white text-white flex items-center justify-center cursor-pointer
+    }
+    .cyan_background {
+        @apply bg-drimes_cyan
+    }
+
+    .drimes_deep_blue {
+        @apply text-drimes_deep_blue
+    }
+
+    .green_color {
+        color: green;
+    }
+
+    .outlined {
+        outline: 2px solid #9333ea; /* Customize the outline style */
+        border-radius: 1rem;
+    }
+
+
+    /* Hiding labels visually and making it available for screen readers */
+    /* .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    } */

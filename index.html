@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/drimes_avatar.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="multi-step-form">
+    <meta property="og:description" content="A frontend mentor challenge">
+    <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/domxafi8k/image/upload/v1695563814/drimes_avatar_xukujh.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- <meta property="og:url" content="https://hangman-game-sooty.vercel.app/"> -->
+    <title>Multistep_Form</title>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+
+  <body
+    class="h-[100dvh] overflow-hidden bg-blue-300 flex items-start md:items-center justify-center"
+  >
+    <section class="md:bg-white bg-drimes_cyan rounded-xl md:px-4 md:mt-4">
+      <div
+        class="flex flex-col items-center justify-start h-[100dvh] md:h-[90dvh] md:w-[80vw] w-[100vw] xl:gap-[10rem] lg:gap-[6rem] md:gap-[4rem] md:flex-row"
+      >
+        <!-- side container -->
+        <div
+          class="flex md:flex-col gap-10 md:gap-0 md:justify-start justify-center relative h-[30%] md:h-[90%] w-[100%] md:w-[30%] bg-[url(./images/bg-sidebar-mobile.svg)] md:bg-[url(./images/bg-sidebar-desktop.svg)] bg-cover bg-center md:pl-6 md:rounded-xl"
+        >
+          <div id="step1Indicator" class="side_list">
+            <div class="side_list_numcontainer cyan_background">1</div>
+            <div
+              class="text-base text-drimes_text_gray font-medium hidden md:block"
+            >
+              Step 1
+              <span class="block text-white">YOUR PHONE</span>
+            </div>
+          </div>
+          <div id="step2Indicator" class="side_list">
+            <div class="side_list_numcontainer">2</div>
+            <div
+              class="text-base text-drimes_text_gray font-medium hidden md:block"
+            >
+              Step 2
+              <span class="block text-white">SELECT PLAN</span>
+            </div>
+          </div>
+          <div id="step3Indicator" class="side_list">
+            <div class="side_list_numcontainer">3</div>
+            <div
+              class="text-base text-drimes_text_gray font-medium hidden md:block"
+            >
+              Step 3
+              <span class="block text-white">ADD-ONS</span>
+            </div>
+          </div>
+          <div id="step4Indicator" class="side_list">
+            <div class="side_list_numcontainer">4</div>
+            <div
+              class="text-base text-drimes_text_gray font-medium hidden md:block"
+            >
+              Step 4
+              <span class="block text-white">SUMMARY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1st form-->
+        <div
+          id="step1"
+          class="bg-white z-10 absolute top-[8rem] md:static w-[95%] h-auto md:w-auto rounded-lg md:rounded-none p-8 md:p-0"
+        >
+          <div class="w-full h-80%">
+            <h2
+              class="text-3xl font-bold leading-tight text-drimes_deep_blue md:text-4xl"
+            >
+              Personal Info
+            </h2>
+            <p class="mt-2 text-base text-gray-600">
+              Please provide your name, email, and phone number
+            </p>
+
+            <form action="#" method="POST" class="mt-8">
+              <div class="space-y-5">
+                <div>
+                  <label for="" class="text-base font-medium text-gray-900"
+                    >Name
+                  </label>
+                  <div class="mt-2.5">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="e.g. Drimes Bot"
+                      class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="" class="text-base font-medium text-gray-900">
+                    Email Address
+                  </label>
+                  <div class="mt-2.5">
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="e.g. drimesbot@gmail.com"
+                      class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="" class="text-base font-medium text-gray-900">
+                    Phone Number</label
+                  >
+                  <div class="mt-2.5">
+                    <input
+                      type="tel"
+                      name=""
+                      id=""
+                      placeholder="e.g. +234 901 506 2004"
+                      class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- 2nd form -->
+        <div
+          id="step2"
+          class="md:ml-[-2rem] lg:ml-[-5.8rem] xl:ml-[-7rem] bg-white z-10 absolute top-[8rem] md:static w-[95%] h-auto md:w-auto rounded-lg md:rounded-none p-8 md:p-0"
+        >
+          <div class="w-full h-80%">
+            <h2
+              class="text-3xl font-bold leading-tight text-drimes_deep_blue md:text-4xl"
+            >
+              Select Your Plan
+            </h2>
+            <p class="mt-2 text-base text-gray-600">
+              You have the option of monthly or yearly buying
+            </p>
+
+            <div class="gap-4 flex flex-col md:flex-row pt-4">
+              <div
+                class="arcade-plan border-outline-once md:w-[8rem] lg:w-[13rem] flex items-center justify-start md:flex-col md:justify-center md:items-start gap-8 cursor-pointer py-4 pl-3 border-[0.5px] rounded-lg border-black border-solid"
+              >
+                <img src="./images/icon-arcade.svg" alt="" />
+                <div>
+                  <p class="font-bold text-drimes_deep_blue text-lg ">Arcade</p>
+                  <p id="arcadePrice" class="text-drimes_text_gray">$9/mo</p>
+
+                  <p
+                    class="hidden md:block text-sm font-semibold text-drimes_deep_blue"
+                  >
+                    2 months free
+                  </p>
+                </div>
+              </div>
+              <div
+                class="advanced-plan border-outline-once md:w-[8rem] lg:w-[13rem] flex items-center justify-start gap-8 md:items-start md:flex-col md:justify-center cursor-pointer py-4 pl-3 border-[0.5px] rounded-lg border-black border-solid"
+              >
+                <img src="./images/icon-advanced.svg" alt="" />
+                <div>
+                  <p class="font-bold text-drimes_deep_blue text-lg">
+                    Advanced
+                  </p>
+                  <p id="advancedPrice" class="text-drimes_text_gray">$12/mo</p>
+
+                  <p
+                    class="hidden md:block text-sm font-semibold text-drimes_deep_blue"
+                  >
+                    2 months free
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="pro-plan border-outline-once md:w-[8rem] lg:w-[13rem] flex items-center justify-start gap-8 md:flex-col md:justify-center md:items-start cursor-pointer py-4 pl-3 border-[0.5px] rounded-lg border-black border-solid"
+              >
+                <img src="./images/icon-pro.svg" alt="" />
+                <div>
+                  <p class="font-bold text-drimes_deep_blue text-lg">Pro</p>
+                  <p id="proPrice" class="text-drimes_text_gray">$15/mo</p>
+
+                  <p
+                    class="hidden md:block text-sm font-semibold text-drimes_deep_blue"
+                  >
+                    2 months free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Toggle  -->
+          <div class="flex justify-center items-center mt-4 sm:mt-12">
+            <span class="monthly_text mr-3 font-bold text-[1.1rem]"
+              >Monthly</span
+            >
+            <label
+              class="relative inline-flex items-center cursor-pointer justify-center"
+            >
+              <input type="checkbox" value="" class="sr-only peer" id="toggleInput"/>
+
+              <div
+                class="w-11 h-6 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-drimes_deep_blue rounded-full peer bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-drimes_deep_blue"
+              ></div>
+              <span class="sr-only"
+                >A toggle to decide whether monthly or yearly</span
+              >
+            </label>
+            <span class="yearly_text ml-3 text-[1.1rem] font-bold">Yearly</span>
+          </div>
+        </div>
+
+        <!-- 3rd form -->
+        <div
+          id="step3"
+          class="md:ml-[-2rem] lg:ml-[-5.8rem] xl:ml-[-7rem] bg-white z-10 absolute top-[8rem] md:static w-[95%] h-auto md:w-auto rounded-lg md:rounded-none py-8 px-4 md:p-0"
+        >
+          <div class="w-full h-80%">
+            <h2
+              class="text-3xl font-bold leading-tight text-drimes_deep_blue md:text-4xl"
+            >
+              Pick add ons
+            </h2>
+            <p class="mt-2 text-base text-gray-600">
+              Add ons help enhance your gaming experience
+            </p>
+
+            <div class="gap-4 flex flex-col pt-4">
+              <div id="onlineService"
+                class="border-outline-all flex items-center justify-between gap-2 md:gap-[8rem] cursor-pointer px-2 py-4 border-[0.5px] rounded-lg border-black border-solid"
+              >
+                <div class="flex items-center gap-4 md:gap-6">
+                  <label
+                    class="inline-flex items-center"
+                  >
+                    <input type="checkbox" class="accent-purple-600 h-4 w-4 toggleInput2" />
+                    <span class="ml-2 text-gray-700 sr-only"
+                      >Purple Checkbox</span
+                    >
+                  </label>
+                  <div>
+                    <p class="font-bold text-drimes_deep_blue text-lg">
+                      Online Service
+                    </p>
+                    <p  class="text-drimes_text_gray">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                </div>
+
+                <p id="firstAddOnPrice" class="text-purple-600">+$1/mo</p>
+              </div>
+
+              <div id="cloudService"
+                class="border-outline-all flex items-center justify-between gap-2 md:gap-[8rem] cursor-pointer px-2 py-4 border-[0.5px] rounded-lg border-black border-solid"
+              >
+                <div class="flex items-center gap-4 md:gap-6">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      class="accent-purple-600 h-4 w-4 toggleInput2"
+                    />
+                    <span class="ml-2 text-gray-700 sr-only"
+                      >Purple Checkbox</span
+                    >
+                  </label>
+                  <div>
+                    <p class="font-bold text-drimes_deep_blue text-lg">
+                      Extra 1TB of cloud save
+                    </p>
+                    <p  class="text-drimes_text_gray">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                </div>
+
+                <p id="secondAddOnPrice" class="text-purple-600">+$2/mo</p>
+              </div>
+
+              <div id="profileService"
+                class="border-outline-all flex items-center justify-between gap-2 md:gap-[8rem] cursor-pointer px-2 py-4 border-[0.5px] rounded-lg border-black border-solid"
+              >
+                <div class="flex items-center gap-4 md:gap-6">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      class="accent-purple-600 h-4 w-4 toggleInput2"
+                    />
+                    <span class="ml-2 text-gray-700 sr-only"
+                      >Purple Checkbox</span
+                    >
+                  </label>
+                  <div>
+                    <p class="font-bold text-drimes_deep_blue text-lg">
+                      Customizable profile
+                    </p>
+                    <p id="arcadePrice" class="text-drimes_text_gray">
+                      Custom theme on your profile
+                    </p>
+                  </div>
+                </div>
+
+                <p id="thirdAddOnPrice" class="text-purple-600">+$3/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th form -->
+        <div
+          id="step4"
+          class="md:ml-[-2rem] lg:ml-[-5.8rem] xl:ml-[-7rem] bg-white z-10 absolute top-[8rem] md:static w-[95%] h-auto md:w-auto rounded-lg md:rounded-none py-8 px-4 md:p-0"
+        >
+          <div class="w-full h-80%">
+            <h2
+              class="text-3xl font-bold leading-tight text-drimes_deep_blue md:text-4xl"
+            >
+              Finishing Up
+            </h2>
+            <p class="mt-2 text-base text-gray-600">
+              Double-check everything looks OK before confirming
+            </p>
+
+            <div class="bg-gray-100 mt-8 rounded-lg p-4 ">
+                <div class="flex my-4  justify-between text-drimes_deep_blue font-extrabold">
+                  <p id="selectedPlanText">Arcade(Monthly)</p>
+                  <p id="selectedPlanPrice">$9/mo</p>
+                </div>
+
+                <hr>
+                <div class="flex my-4 justify-between">
+                  <p class="text-gray-500">Online Service</p>
+                  <p class="text-drimes_deep_blue font-semibold">$1/mo</p>
+                </div>
+                <div class="flex my-4 justify-between">
+                  <p class="text-gray-500">Larger Storage</p>
+                  <p class="text-drimes_deep_blue font-semibold">+$2/mo</p>
+                </div>
+            </div>
+
+            <div class="flex my-4 justify-between p-4">
+              <p class="text-gray-500">Total(per month)</p>
+              <p class="text-drimes_deep_blue font-semibold">+$3/mo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="fixed z-10 bottom-[.1rem] right-[1rem] lg:bottom-[3rem] md:bottom-[5rem] md:right-[5rem] lg:right-[10rem] bg-drimes_deep_blue px-3 py-2 m rounded-lg text-white cursor-pointer"
+        id="nextButton"
+      >
+        Next Step
+      </button>
+      <button
+        type="submit"
+        class="absolute z-10 bottom-[.1rem] md:bottom-[5rem] lg:bottom-[3rem] xl:bottom-[3rem] md:left-[18rem] lg:left-[20rem] xl:left-[35rem] px-3 py-2 rounded-lg text-gray-600 cursor-pointer font-bold"
+        id="prevButton"
+      >
+        Go Back
+      </button>
+    </section>
+
+    <script type="module" src="script.js" ></script>
+  </body>
+</html>
